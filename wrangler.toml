@@ -1,0 +1,16 @@
+name = "adversiqintelligence"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+# Pages Functions environment
+[vars]
+ENVIRONMENT = "production"
+
+# KV namespace for persistent agent memory
+[[kv_namespaces]]
+binding = "NSIL_MEMORY"
+id = "5d8cdb90288b4f0d858b524e58f87a83"  # adversiq-intelligence-data namespace
+
+# Workers AI binding exposed as env.AI in Pages Functions.
+[ai]
+binding = "AI"
